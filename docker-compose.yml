@@ -1,0 +1,11 @@
+services:
+  linkcard:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./config.json:/app/config.json:ro
+    environment:
+      - PORT=3000
+    # Uncomment to run as a specific UID/GID:
+    # user: "1000:1000"

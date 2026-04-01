@@ -1,0 +1,60 @@
+{
+  "site": {
+    "title": "Cayce Pollard",
+    "favicon": ""
+  },
+
+  "profile": {
+    "name": "Cayce Pollard",
+    "subtitle": "Neural Interface Designer",
+    "avatar": "https://i.pravatar.cc/150?img=47"
+  },
+
+  "theme": {
+    "backgroundColor": "#C7E3F2",
+    "cardBackgroundColor": "#ffffff",
+    "sectionBackgroundColor": "#4299FF",
+    "accentColor": "#4299FF",
+    "textColor": "#333333",
+    "sectionTextColor": "#ffffff",
+    "fontFamily": "'Inter', sans-serif",
+    "avatarSize": "120px",
+    "borderRadius": "0.5rem",
+
+    "backgroundImage": "",
+    "backgroundGradient": true
+  },
+
+  "sections": [
+    {
+      "type": "about",
+      "heading": "About",
+      "text": "Lorem ipsum <strong>sed dolor sit amet</strong>, magna adipiscing elit. Integer sagittis, orci non mattis, ante odio bibendum lectus."
+    },
+    {
+      "type": "links",
+      "heading": "Recent Work",
+      "items": [
+        { "text": "Sed dolor",   "linkText": "amet dictum",       "url": "https://example.com/1" },
+        { "text": "Eleifend eu", "linkText": "integer ac sapien", "url": "https://example.com/2" },
+        { "text": "Rhoncus",     "linkText": "hendrerit odio",    "url": "https://example.com/3", "suffix": "consequat" },
+        { "text": "Ipsum",       "linkText": "interdum nunc",     "url": "https://example.com/4", "suffix": "ultrices" }
+      ]
+    },
+    {
+      "type": "contact",
+      "heading": "Contact",
+      "items": [
+        { "label": "Twitter",   "url": "https://twitter.com/yourhandle",       "icon": "twitter" },
+        { "label": "Facebook",  "url": "https://facebook.com/yourprofile",     "icon": "facebook" },
+        { "label": "Instagram", "url": "https://instagram.com/yourhandle",     "icon": "instagram" },
+        { "label": "LinkedIn",  "url": "https://linkedin.com/in/yourprofile",  "icon": "linkedin" },
+        { "label": "GitHub",    "url": "https://github.com/yourhandle",        "icon": "github" },
+        { "label": "YouTube",   "url": "https://youtube.com/@yourchannel",     "icon": "youtube" },
+        { "label": "TikTok",    "url": "https://tiktok.com/@yourhandle",       "icon": "tiktok" },
+        { "label": "Phone",     "url": "tel:+1234567890",                      "icon": "phone" },
+        { "label": "Email",     "url": "mailto:you@example.com",               "icon": "email" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# Dependencies
+node_modules
+node-compile-cache
+
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+!README.md
+
+# Development
+.env
+.env.local
+.env.*.local
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log
+tmp
+temp

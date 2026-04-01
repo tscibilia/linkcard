@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+node-compile-cache/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Config (personal test data — use example.config.json as template)
+config.json
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log
+tmp/
+temp/

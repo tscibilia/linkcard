@@ -1,0 +1,13 @@
+{
+  "name": "linkcard",
+  "version": "0.1.0",
+  "description": "Personal landing page — configurable via config.json",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
