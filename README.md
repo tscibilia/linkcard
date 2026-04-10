@@ -1,11 +1,12 @@
 # linkcard
 
-<p align="center">
-  <img src="https://ghcr-badge.egpl.dev/tscibilia/linkcard/latest_tag?trim=major&label=latest" alt="Latest">
-  <img src="https://github.com/tscibilia/linkcard/actions/workflows/build.yaml/badge.svg" alt="Build">
-  <img src="https://img.shields.io/github/v/release/tscibilia/linkcard?sort=semver" alt="Release">
-  <img src="https://img.shields.io/github/license/tscibilia/linkcard" alt="License">
-</p>
+<div align="center">
+
+[![GitHub Release](https://img.shields.io/github/v/release/tscibilia/linkcard?style=for-the-badge&sort=semver)](https://github.com/tscibilia/linkcard/releases)&nbsp;&nbsp;
+[![Build](https://img.shields.io/github/actions/workflow/status/tscibilia/linkcard/build.yaml?style=for-the-badge)](https://github.com/tscibilia/linkcard/actions/workflows/build.yaml)&nbsp;&nbsp;
+[![License](https://img.shields.io/github/license/tscibilia/linkcard?style=for-the-badge)](https://github.com/tscibilia/linkcard/blob/main/LICENSE)&nbsp;&nbsp;
+
+</div>
 
 > A minimal personal landing page — like a business card for the web. Configured entirely via a single `config.json`, served by a lightweight Node/Express container.
 
