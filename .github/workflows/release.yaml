@@ -63,7 +63,7 @@ jobs:
           make_latest: true
 
       - name: Delete untagged images
-        uses: actions/delete-package-versions@e5bc658cc4c965c472afe991f2c69654a07ed8e1 # v5
+        uses: actions/delete-package-versions@e5bc658cc4c965c472efe991f8beea3981499c55 # v5
         with:
           package-name: linkcard
           package-type: container
