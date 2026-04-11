@@ -20,7 +20,7 @@
 - **Auto-darkening sections** — successive sections shade via `color-mix()` from a single base color
 - **All icons built-in** — Twitter, Facebook, Instagram, LinkedIn, GitHub, YouTube, TikTok, Phone, Email
 - **Env var overrides** — any `config.json` key can be overridden at runtime via environment variables
-- **Non-root container** — runs as `nobody`, compatible with Kubernetes `runAsNonRoot: true`
+- **Non-root container** — runs as UID 1000 by default (`APP_UID`/`APP_GID` build args), compatible with Kubernetes `runAsNonRoot: true`
 - **Health check** — `/healthz` endpoint for k8s liveness/readiness probes
 - **Fade-in animation** — smooth page entrance on load
 
