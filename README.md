@@ -4,6 +4,8 @@
 
 [![GitHub Release](https://img.shields.io/github/v/release/tscibilia/linkcard?style=for-the-badge&sort=semver)](https://github.com/tscibilia/linkcard/releases)&nbsp;&nbsp;
 [![Build](https://img.shields.io/github/actions/workflow/status/tscibilia/linkcard/build.yaml?style=for-the-badge)](https://github.com/tscibilia/linkcard/actions/workflows/build.yaml)&nbsp;&nbsp;
+[![CodeQL](https://img.shields.io/github/actions/workflow/status/tscibilia/linkcard/codeql.yml?style=for-the-badge&label=CodeQL)](https://github.com/tscibilia/linkcard/security/code-scanning)&nbsp;&nbsp;
+[![Trivy](https://img.shields.io/github/actions/workflow/status/tscibilia/linkcard/security.yaml?style=for-the-badge&label=Trivy)](https://github.com/tscibilia/linkcard/actions/workflows/security.yaml)&nbsp;&nbsp;
 [![License](https://img.shields.io/github/license/tscibilia/linkcard?style=for-the-badge)](https://github.com/tscibilia/linkcard/blob/main/LICENSE)&nbsp;&nbsp;
 
 </div>
