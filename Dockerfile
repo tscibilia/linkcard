@@ -6,6 +6,22 @@ RUN npm ci --omit=dev
 
 FROM node:24-alpine@sha256:01743339035a5c3c11a373cd7c83aeab6ed1457b55da6a69e014a95ac4e4700b
 
+# Configurable UID/GID — override at build or runtime
+ARG APP_UID=1000
+ARG APP_GID=1000
+
+# Patch OS-level CVEs and strip npm/yarn (not needed at runtime — reduces attack surface)
+RUN apk upgrade --no-cache && \
+    rm -rf /usr/local/lib/node_modules/npm /usr/local/bin/npm \
+           /usr/local/lib/node_modules/corepack /usr/local/bin/corepack \
+           /opt/yarn* /usr/local/bin/yarn /usr/local/bin/yarnpkg
+
+# Use existing group if GID taken (e.g. 1000 = node in alpine), else create
+RUN (getent group ${APP_GID} >/dev/null 2>&1 || addgroup -g ${APP_GID} -S appgroup) && \
+    APP_GROUP=$(getent group ${APP_GID} | cut -d: -f1) && \
+    adduser -u ${APP_UID} -S appuser -G ${APP_GROUP} 2>/dev/null || \
+    echo "[docker] UID ${APP_UID} already exists, reusing"
+
 WORKDIR /app
 
 COPY --from=build /app/node_modules ./node_modules
@@ -18,7 +34,7 @@ COPY example.config.json ./config.json
 # Make app readable by any UID
 RUN chmod -R a+rX /app
 
-USER nobody
+USER ${APP_UID}:${APP_GID}
 
 ENV PORT=3000
 ENV CONFIG_PATH=/app/config.json
